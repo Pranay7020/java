@@ -25,6 +25,6 @@ public class Bionomial_cofficient {
         int n = 5;
         int r = 2;
 
-        System.out.println(binofc(n,r)); // ⭐ PRINT THE RESULT
+        System.out.println(binofc(n,r));    
     }
 }
