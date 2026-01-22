@@ -1,10 +1,27 @@
 
 package strings;
-import java.util.*;
+
 public class inputOutput {
     public static void main(String args[]){
-        Scanner sc=new Scanner(System.in);
-        String str =sc.nextLine();
-        System.out.print(str);
+        String name="levep";
+       int i=0;
+       int j=name.length()-1;
+       boolean isp=true;
+       while(i<j){
+        if(name.charAt(i)!=name.charAt(j)){
+        
+       
+         isp=false;
+        }
+         i++;
+         j--;
+ 
+       }
+       if(isp==true){
+        System.out.print("is palinderom");
+       }
+       else{
+   System.out.print(" not is palinderom");
+       }
     }
 }

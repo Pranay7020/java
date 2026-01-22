@@ -6,6 +6,20 @@ package mylist;
 
 public class MoveZeroToLast {
     public static void main(String args[]) {
+        int[] arr = {1,0,-3,8,-0,0,5,7};
+        int[] zero = new int[arr.length];
+        int j =0;
+        for(int i =0; i<arr.length;i++) {
+            if(arr[i] != 0)  {
+                zero[j++] = arr[i];
+            }
+        }
+        while(j<arr.length) {
+            zero[j++]=0;
+        }
+        for(int i=0;i<zero.length;i++) {
+            System.out.println(zero[i]);
+         }
 
         //  List<Integer> arrList = List.of(1,0,-3,8,-0,0,5,7);
 
@@ -16,22 +30,22 @@ public class MoveZeroToLast {
 
         // //O(n)
 
-         int[] arr = {1,0,-3,8,-0,0,5,7};
+        //  int[] arr = {1,0,-3,8,-0,0,5,7};
        
-         int[] temp =new int[arr.length];
-          int j =0;
-
-         for(int i=0;i<arr.length;i++) {
-            if(arr[i] != 0) {
-                temp[j++] =arr[i];
-            }   
-         }
-         while(j<arr.length) {
-            temp[j++] = 0;
-         }
-          for (int num : temp) {
-            System.out.print(num + " ");
-        }
+        //  int[] zero = new int[arr.length];
+        //  int j=0;
+        //  for(int i=0;i<arr.length;i++) {
+        //     if(arr[i]!=0) {
+        //         zero[j++] = arr[i];
+        //     }
+            
+        //  }
+        //  while(j<zero.length-1) {
+        //         zero[j++] = 0;
+        //     }
+        //  for(int i=0;i<zero.length;i++) {
+        //     System.out.println(zero[i]);
+        //  }
 
     }   
 }
