@@ -1,8 +1,32 @@
 package mylist;
 
+import java.util.stream.IntStream;
+
 public class array {
 
+        
+
     public static void main(String args[]) {
+
+        String s = "aba";
+        char c[] = s.toCharArray();
+        int left =0 ,right = s.length()-1;
+        while(left< right) {
+                char temp = c[left];
+                c[left] = c[right];
+                c[right] = temp;
+                left++;right--;
+
+        }
+        String rev = new String(c);
+        if(s.equals(rev)) {
+                System.out.println("Palindrom " + rev);
+        }
+        
+
+        
+
+
 //------------------------------------------------------------------------------------
 
 //-------------Reverse string
@@ -97,6 +121,11 @@ public class array {
            
             
         // }
+
+        // IntStream.rangeClosed(2,10).
+        // filter(n -> IntStream.rangeClosed(2,(int)Math.sqrt(n)).allMatch(i -> n%i !=0)).forEach(System.out::println);
+
+        
         
     }
     
