@@ -95,9 +95,6 @@ public class removeLast {
         LL.addInInde(3,14);
         LL.removelast();
         LL.print();
-
-
-
      }
 }
 
