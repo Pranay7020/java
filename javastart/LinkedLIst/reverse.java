@@ -23,7 +23,7 @@ public class reverse {
     }
      public void rev(){
         node prev =null;
-        node curr =Tail=Head;
+        node curr =Head;
         node next ;
         while(curr!=null){
             next=curr.next;
@@ -33,7 +33,7 @@ public class reverse {
 
         }
         Head=prev;
-       
+        
 
        
         
