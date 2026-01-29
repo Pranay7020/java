@@ -6,7 +6,7 @@ public class PrintdecOrder {
         System.out.print("1");
         return;
     }
-     System.out.print(n);
+     System.out.print(n+" ");
      printdec(n-1);
 
    }
